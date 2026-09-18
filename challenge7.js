@@ -66,18 +66,32 @@ const updatedProducts = products.map(function (product) {
 
 
     // Determine discount percentage
+    if (product.price >= 5000) {
+        discountPercent = 20;
+    } else if (product.price >= 1000) {
+        discountPercent = 10;
+    } else {
+        discountPercent = 5;
+    }
 
 
     // Calculate discount amount
+    let discountAmount = (product.price * discountPercent) / 100;
 
 
     // Calculate discounted price
+    let discountedPrice = product.price - discountAmount;
 
 
     // Return a NEW object containing:
     // name
     // price
     // discountedPrice
+    return {
+        name: product.name,
+        price: product.price,
+        discountedPrice: discountedPrice
+    };
 
 });
 
