@@ -43,3 +43,5 @@ node challenge2.js
 ## 👤 Author
 
 **FunkoWon** — learning and growing one challenge at a time 🚀
+
+> 🔄 **Still going** — more challenges being added as I keep leveling up!
